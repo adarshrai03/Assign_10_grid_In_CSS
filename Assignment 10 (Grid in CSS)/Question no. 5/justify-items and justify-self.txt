@@ -1,0 +1,16 @@
+justify-items and justify-self are CSS properties used in conjunction with CSS Grid to control the alignment of grid items within a grid container.
+
+justify-items:
+justify-items is used on the grid container to set the default horizontal alignment of grid items along the inline (also known as the row) axis.
+
+justify-self is used on individual grid items to override the default alignment set by justify-items. It allows you to align a single grid item within its grid cell along the inline axis.
+
+Scope:
+
+justify-items applies to the grid container and sets the default alignment for all grid items within it.
+justify-self applies to individual grid items and allows you to override the default alignment set by justify-items.
+
+Usage:
+
+Use justify-items when you want to apply a consistent alignment to all grid items within a container.
+Use justify-self when you want to specifically control the alignment of a single grid item.

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid auto example</title>
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+        }
+        .container{
+            height: 100vh;
+            width: 1200px;
+            background-color: aliceblue;
+            display: grid;
+            grid-template-areas:     
+            'HEADER HEADER HEADER HEADER'
+            'MENU MAIN MAIN RIGHT'
+            'MENU MAIN MAIN RIGHT'
+            'MENU FOOTER FOOTER FOOTER'
+            ;
+            grid-auto-rows: 160px;
+            grid-auto-columns: 260px;
+        }
+        .header{
+            grid-area: HEADER;
+            background-color: aquamarine;
+            border: 2px solid black;
+        }
+        .menu{
+            grid-area: MENU;
+            background-color: blanchedalmond;
+            border: 2px solid black;
+        }
+        .main{
+            grid-area: MAIN;
+            background-color: rgb(253, 36, 108);
+            border: 2px solid black;
+        }
+        .right{
+            grid-area: RIGHT;
+            background-color: beige;
+            border: 2px solid black;
+        }
+        .footer{
+            grid-area: FOOTER;
+            background-color: gray;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header"> head</div>
+        <div class="menu">menu</div>
+        <div class="main">main</div>
+        <div class="right">right</div>
+        <div class="footer">footer</div>
+    </div>
+</body>
+</html>

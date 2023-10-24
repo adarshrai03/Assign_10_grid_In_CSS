@@ -1,0 +1,18 @@
+
+grid-auto-rows and grid-auto-columns : properties in CSS used with the CSS Grid Layout module. They determine the size of rows and columns in a grid that haven't been explicitly defined using grid-template-rows and grid-template-columns.
+
+grid-auto-rows:
+
+This property is used to set the size of rows in a grid that are created implicitly (i.e., not defined using grid-template-rows).
+It accepts values like lengths (pixels, percentages, etc.), fr units (flexible units), min-content, max-content, auto, etc.
+If you set a specific value, like grid-auto-rows: 50px, it means that any rows that are created automatically will be 50 pixels tall.
+If you set it to auto, the row will be as tall as its content.
+If set to minmax(min, max), it will create rows with a minimum height of "min" and a maximum height of "max".
+
+grid-auto-columns:
+
+Similar to grid-auto-rows, this property sets the size of columns that are created implicitly (i.e., not defined using grid-template-columns).
+It accepts the same kind of values as grid-auto-rows, like lengths, fr units, min-content, max-content, auto, etc.
+If you set a specific value, like grid-auto-columns: 20%, it means that any columns that are created automatically will be 20% of the grid container's width.
+If you set it to auto, the column will be as wide as its content.
+If set to minmax(min, max), it will create columns with a minimum width of "min" and a maximum width of "max".

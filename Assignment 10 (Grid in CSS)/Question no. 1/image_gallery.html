@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image-gallery</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        .container{
+            display: grid;
+            grid-auto-rows: 6cm;
+            grid-auto-columns: 11cm;
+            grid-template-areas: 
+            'IMAGE1 IMAGE1 IMAGE2'
+            'IMAGE3 IMAGE4 IMAGE5'
+            'IMAGE3 IMAGE6 IMAGE5';
+           
+        }
+
+        img{
+            border-radius: 10px;
+            height: 100%;
+            width: 100%;
+        }
+        .img1{
+            grid-area: IMAGE1;
+            border: 1.5px solid black;
+        }
+        .img2{
+            grid-area: IMAGE2;
+            border: 1.5px solid black;
+        }
+        .img3{
+            grid-area: IMAGE3 ;
+            border: 1.5px solid black;
+        }
+        .img4{
+            grid-area: IMAGE4;
+            border: 1.5px solid black;
+        }
+        .img5{
+            grid-area: IMAGE5;
+            border: 1.5px solid black;
+        }
+        .img6{
+            grid-area: IMAGE6;
+            border: 1.5px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="img1"><img class="i1" src="https://helpx.adobe.com/content/dam/help/en/photoshop/using/convert-color-image-black-white/jcr_content/main-pars/before_and_after/image-before/Landscape-Color.jpg" alt="img1.png"></div>
+        <div class="img2"><img class="i2" src="https://mimi-panda.com/wp-content/uploads/2023/02/marguerite-729510_640.jpg" alt="img2.png"></div>
+        <div class="img3"><img class="i3" src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg" alt="img3.png"></div>
+        <div class="img4"><img class="i4" src="https://media.gcflearnfree.org/ctassets/topics/246/share_flower_fullsize.jpg" alt="img4.png"></div>
+        <div class="img5"><img class="i5" src="https://upload.wikimedia.org/wikipedia/commons/8/82/Image_circle.jpg" alt="img5.pnj"></div>
+        <div class="img6"><img class="i6" src="https://deep-image.ai/blog/content/images/2022/09/underwater-magic-world-8tyxt9yz.jpeg" alt="img6.png"></div>
+    </div>
+</body>
+</html>
